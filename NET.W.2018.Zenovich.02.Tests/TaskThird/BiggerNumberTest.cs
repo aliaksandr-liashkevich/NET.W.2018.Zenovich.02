@@ -13,9 +13,9 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskThird
         private IBiggerNumber biggerNumber;
         private Mock<ITimer> timer;
 
-        public class StubBiggerNumber : BiggerNumber
+        public class DerivedBiggerNumber : BiggerNumber
         {
-            public StubBiggerNumber(ITimer timer)
+            public DerivedBiggerNumber(ITimer timer)
             {
                 Timer = timer;
             }
@@ -25,7 +25,7 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskThird
         public void MethodInitialize()
         {
             timer = new Mock<ITimer>();
-            biggerNumber = new StubBiggerNumber(timer.Object);
+            biggerNumber = new DerivedBiggerNumber(timer.Object);
         }
 
 
