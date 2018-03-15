@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskFifth\ISqrt.cs" />
     <Compile Include="TaskFirst\IBitNumber.cs" />
     <Compile Include="TaskFourth\IDigit.cs" />
     <Compile Include="TaskSecond\IBiggerNumber.cs" />

@@ -1,5 +1,7 @@
-﻿using NET.W._2018.Zenovich._02.API.TaskFourth;
+﻿using NET.W._2018.Zenovich._02.API.TaskFifth;
+using NET.W._2018.Zenovich._02.API.TaskFourth;
 using NET.W._2018.Zenovich._02.API.TaskSecond;
+using NET.W._2018.Zenovich._02.Model.TaskFifth;
 using NET.W._2018.Zenovich._02.Model.TaskFourth;
 using NET.W._2018.Zenovich._02.Model.TaskSecond;
 using System;
@@ -17,13 +19,8 @@ namespace NET.W._2018.Zenovich._02.App
     {
         static void Main(string[] args)
         {
-            IDigit digit = new Digit();
-            int[] array = digit.FilterDigit(7, 1, 2, 3, 4, 5, 7, 68, 69, 70, 15, 17);
-
-            foreach (var item in array)
-            {
-                Console.WriteLine(item);
-            }
+            ISqrt sqrt = new SqrtCalculator();
+            double result = sqrt.SqrtN(0.04100625, 4, 0.0001);
 
             Console.ReadKey();
         }

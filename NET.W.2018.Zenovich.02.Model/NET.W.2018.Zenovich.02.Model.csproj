@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskFifth\SqrtCalculator.cs" />
     <Compile Include="TaskFirst\BitNumber.cs" />
     <Compile Include="TaskFourth\Digit.cs" />
     <Compile Include="TaskSecond\BiggerNumber.cs" />
@@ -52,5 +53,6 @@
       <Name>NET.W.2018.Zenovich.02.API</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
