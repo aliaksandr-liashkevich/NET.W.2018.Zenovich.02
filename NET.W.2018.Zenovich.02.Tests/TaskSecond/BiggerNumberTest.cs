@@ -41,5 +41,27 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskSecond
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void FindNextBiggerNumber_Minus30Number_ArgumentOutOfRangeException()
+        {
+            // arrange
+            int number = -30;
+
+            // act
+            int actual = biggerNumber.FindNextBiggerNumber(number);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void FindNextBiggerNumber_2147483641Number_OverflowException()
+        {
+            // arrange
+            int number = 2147483641;
+
+            // act
+            int actual = biggerNumber.FindNextBiggerNumber(number);
+        }
     }
 }

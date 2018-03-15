@@ -25,6 +25,11 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
 
         public int FindNextBiggerNumber(int number)
         {
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(number));
+            }
+
             _number = Convert.ToString(number);
             _length = _number.Length;
 
@@ -32,9 +37,14 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
 
             if (_indexLeft != -1 && _indexRight != -1)
             {
-                string result = SwapAndSort();
+                int result = -1;
 
-                return Convert.ToInt32(result);
+                if (Int32.TryParse(SwapAndSort(), out result))
+                {
+                    return result;
+                }
+
+                throw new OverflowException($"The FindNextBiggerNumber method result  is bigger than {Int32.MaxValue}");
             }
 
             return -1;

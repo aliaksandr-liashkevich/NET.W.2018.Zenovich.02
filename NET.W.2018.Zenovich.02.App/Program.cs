@@ -13,7 +13,7 @@ namespace NET.W._2018.Zenovich._02.App
         static void Main(string[] args)
         { 
             BiggerNumber bigger = new BiggerNumber();
-            int result = bigger.FindNextBiggerNumber(20);
+            int result = bigger.FindNextBiggerNumber(2147483641);
             Console.WriteLine(result);
             Console.ReadKey();
         }
