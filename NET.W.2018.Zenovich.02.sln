@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Zenovich.02.Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Zenovich.02.Tests", "NET.W.2018.Zenovich.02.Tests\NET.W.2018.Zenovich.02.Tests.csproj", "{F9BE9D56-05A5-4F4B-9D77-C66686ED27B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Zenovich.02.App", "NET.W.2018.Zenovich.02.App\NET.W.2018.Zenovich.02.App.csproj", "{C64FC9FB-AB01-44AD-A24A-77F6DAA0CE49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F9BE9D56-05A5-4F4B-9D77-C66686ED27B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9BE9D56-05A5-4F4B-9D77-C66686ED27B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9BE9D56-05A5-4F4B-9D77-C66686ED27B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64FC9FB-AB01-44AD-A24A-77F6DAA0CE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64FC9FB-AB01-44AD-A24A-77F6DAA0CE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64FC9FB-AB01-44AD-A24A-77F6DAA0CE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64FC9FB-AB01-44AD-A24A-77F6DAA0CE49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

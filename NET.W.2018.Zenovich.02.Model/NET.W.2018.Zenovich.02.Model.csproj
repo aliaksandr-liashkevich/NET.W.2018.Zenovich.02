@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskFirst\BitNumber.cs" />
+    <Compile Include="TaskSecond\BiggerNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NET.W.2018.Zenovich.02.API\NET.W.2018.Zenovich.02.API.csproj">
