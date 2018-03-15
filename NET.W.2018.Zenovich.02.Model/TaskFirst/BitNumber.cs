@@ -26,16 +26,6 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFirst
 
         public int InsertNumber(int leftValue, int rightValue, int i, int j)
         {
-            if (leftValue < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(leftValue));
-            }
-
-            if (rightValue < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(rightValue));
-            }
-
             if (i < 0 || i > 31)
             {
                 throw new ArgumentOutOfRangeException(nameof(i));
