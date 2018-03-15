@@ -34,7 +34,6 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
                 _timer = value ?? throw new ArgumentNullException(nameof(Timer));
             }
         }
-        
 
         public BiggerNumber()
         {
@@ -81,9 +80,11 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
             }
             catch (Exception exception)
             {
-                Timer.Stop();
-
                 throw exception;
+            }
+            finally
+            {
+                Timer.Stop();
             }
 
             timeSpan = Timer.GetTime();
