@@ -47,7 +47,7 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
         }
 
         [TestMethod]
-        public void InsertNumber_15into8PostionsI3J8_120returned()
+        public void InsertNumber_15Into8PostionsI3J8_120Returned()
         {
             // arrange
             int leftValue = 8;
@@ -66,7 +66,7 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
         }
 
         [TestMethod]
-        public void InsertNumber_15into8PostionsI3J5_56returned()
+        public void InsertNumber_15Into8PostionsI3J5_56Returned()
         {
             // arrange
             int leftValue = 8;
@@ -85,7 +85,7 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
         }
 
         [TestMethod]
-        public void InsertNumber_15into15PostionsI0J0_15returned()
+        public void InsertNumber_15Into15PostionsI0J0_15Returned()
         {
             // arrange
             int leftValue = 15;
@@ -104,7 +104,7 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
         }
 
         [TestMethod]
-        public void InsertNumber_15into8PostionsI0J0_9returned()
+        public void InsertNumber_15Into8PostionsI0J0_9Returned()
         {
             // arrange
             int leftValue = 8;

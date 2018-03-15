@@ -43,6 +43,34 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskSecond
         }
 
         [TestMethod]
+        public void FindNextBiggerNumber_0Number_Minus1Returned()
+        {
+            // arrange
+            int number = 0;
+            int expected = -1;
+
+            // act
+            int actual = biggerNumber.FindNextBiggerNumber(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FindNextBiggerNumber_30Number_132Returned()
+        {
+            // arrange
+            int number = 123;
+            int expected = 132;
+
+            // act
+            int actual = biggerNumber.FindNextBiggerNumber(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void FindNextBiggerNumber_Minus30Number_ArgumentOutOfRangeException()
         {

@@ -26,8 +26,18 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFifth
             return (1 / n) * ((n - 1) * x0 + number / Pow(x0, (int)n - 1));
         }
 
-        public double SqrtN(double number, double n, double eps)
+        public double SqrtN(double number, int n, double eps)
         {
+            if (n < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(n));
+            }
+
+            if (eps < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(eps));
+            }
+
             double x0 = number / n;
             double xkPlus1 = functionXkPlus1(n, x0, number);
             

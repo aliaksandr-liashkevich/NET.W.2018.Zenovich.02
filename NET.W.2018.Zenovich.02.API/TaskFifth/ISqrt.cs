@@ -8,6 +8,6 @@ namespace NET.W._2018.Zenovich._02.API.TaskFifth
 {
     public interface ISqrt
     {
-        double SqrtN(double number, double n, double eps);
+        double SqrtN(double number, int n, double eps);
     }
 }
