@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskFirst\BitNumber.cs" />
+    <Compile Include="TaskFourth\Digit.cs" />
     <Compile Include="TaskSecond\BiggerNumber.cs" />
     <Compile Include="TaskThird\Timer.cs" />
   </ItemGroup>

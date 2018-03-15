@@ -18,16 +18,20 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
 
         private ITimer _timer;
 
-        private ITimer Timer
+        protected ITimer Timer
         {
             get
             {
                 if (_timer == null)
                 {
                     _timer = new Timer();
-                }
+                }   
 
                 return _timer;
+            }
+            set
+            {
+                _timer = value ?? throw new ArgumentNullException(nameof(Timer));
             }
         }
         

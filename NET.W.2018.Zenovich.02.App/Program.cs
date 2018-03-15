@@ -1,4 +1,6 @@
-﻿using NET.W._2018.Zenovich._02.API.TaskSecond;
+﻿using NET.W._2018.Zenovich._02.API.TaskFourth;
+using NET.W._2018.Zenovich._02.API.TaskSecond;
+using NET.W._2018.Zenovich._02.Model.TaskFourth;
 using NET.W._2018.Zenovich._02.Model.TaskSecond;
 using System;
 using System.Collections.Generic;
@@ -15,16 +17,13 @@ namespace NET.W._2018.Zenovich._02.App
     {
         static void Main(string[] args)
         {
-            BiggerNumber biggerNumber = new BiggerNumber();
-            TimeSpan timeSpan = new TimeSpan();
+            IDigit digit = new Digit();
+            int[] array = digit.FilterDigit(7, 1, 2, 3, 4, 5, 7, 68, 69, 70, 15, 17);
 
-            Thread.Sleep(1000);
-
-            Console.WriteLine(biggerNumber.FindNextBiggerNumber(123232, ref timeSpan));
-            Console.WriteLine(timeSpan.TotalMilliseconds);
-
-            Console.WriteLine(biggerNumber.FindNextBiggerNumber(123232, ref timeSpan));
-            Console.WriteLine(timeSpan.TotalMilliseconds);
+            foreach (var item in array)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }
