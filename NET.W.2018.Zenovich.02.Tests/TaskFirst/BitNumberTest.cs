@@ -20,12 +20,14 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void InsertNumber_PositionsI0J32_ArgumentOutOfRangeException()
         {
+            // arrange
             int leftValue = 32;
             int rightValue = 44;
 
             int i = 0;
             int j = 32;
 
+            //act
             bitNumber.InsertNumber(leftValue, rightValue, i, j);
         }
 
@@ -33,12 +35,14 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void InsertNumber_PositionsI6J0_ArgumentOutOfRangeException()
         {
+            // arrange
             int leftValue = 32;
             int rightValue = 44;
 
             int i = 6;
             int j = 0;
 
+            //act
             bitNumber.InsertNumber(leftValue, rightValue, i, j);
         }
 
