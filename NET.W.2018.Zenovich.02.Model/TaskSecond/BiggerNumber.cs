@@ -1,4 +1,6 @@
 ﻿using NET.W._2018.Zenovich._02.API.TaskSecond;
+using NET.W._2018.Zenovich._02.API.TaskThird;
+using NET.W._2018.Zenovich._02.Model.TaskThird;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,21 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
         private int _indexRight;
         private string _number;
         private int _length;
+
+        private ITimer _timer;
+
+        private ITimer Timer
+        {
+            get
+            {
+                if (_timer == null)
+                {
+                    _timer = new Timer();
+                }
+
+                return _timer;
+            }
+        }
         
 
         public BiggerNumber()
@@ -48,6 +65,26 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
             }
 
             return -1;
+        }
+
+        public int FindNextBiggerNumber(int number, ref TimeSpan timeSpan)
+        {
+            int result;
+            Timer.Start();
+            try
+            {
+                result = FindNextBiggerNumber(number);
+            }
+            catch (Exception exception)
+            {
+                Timer.Stop();
+
+                throw exception;
+            }
+
+            timeSpan = Timer.GetTime();
+
+            return result;
         }
 
         private void FindReplacedLeftAndRightDigit()
