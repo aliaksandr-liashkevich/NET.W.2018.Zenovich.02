@@ -8,7 +8,7 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFirst
     [TestClass]
     public class BitNumberTest
     {
-        private static BitNumber bitNumber;
+        private static IBitNumber bitNumber;
 
         [ClassInitialize]
         public static void ClassInitialize(TestContext context)

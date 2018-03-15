@@ -58,6 +58,9 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
                     }
                 }
             }
+
+            _indexLeft = -1;
+            _indexRight = -1;
         }
 
         public String SwapAndSort()
