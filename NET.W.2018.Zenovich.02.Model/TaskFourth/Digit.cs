@@ -12,6 +12,12 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFourth
     {
         public int[] FilterDigit(int number, params int[] arguments)
         {
+            
+            if (arguments == null)
+            {
+                throw new ArgumentNullException(nameof(arguments));
+            }
+
             List<int> list = new List<int>();
 
             Regex regex = new Regex($"[{number}]");

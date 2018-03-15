@@ -21,15 +21,15 @@ namespace NET.W._2018.Zenovich._02.Tests.TaskFifth
 
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
-        "Numbers.xml",
-        "Number",
+        "SqrtNumbers.xml",
+        "SqrtNumber",
         DataAccessMethod.Sequential)]
-        [DeploymentItem("TaskFifth\\Files\\Numbers.xml")]
+        [DeploymentItem("TaskFifth\\Files\\SqrtNumbers.xml")]
         public void SqrtN_NumberFromXml_ExpectedFromXml()
         {
             // arrange
             double number = Convert.ToDouble(TestContext.DataRow["number"].ToString(), CultureInfo.InvariantCulture);
-            int n = Convert.ToInt32(TestContext.DataRow["n"].ToString());
+            int n = Convert.ToInt32(TestContext.DataRow["N"].ToString());
             double eps = Convert.ToDouble(TestContext.DataRow["eps"].ToString(), CultureInfo.InvariantCulture);
             double expected = Convert.ToDouble(TestContext.DataRow["expected"].ToString(), CultureInfo.InvariantCulture);
 

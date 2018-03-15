@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqrtNumberDetails>
+  <SqrtNumber number="1" N="5" eps="0.0001" expected="1"/>
+  <SqrtNumber number="8" N="3" eps="0.0001" expected="2"/>
+  <SqrtNumber number="0.001" N="3" eps="0.0001" expected="0.1"/>
+  <SqrtNumber number="0.04100625" N="4" eps="0.0001" expected="0.45"/>
+  <SqrtNumber number="8" N="3" eps="0.0001" expected="2"/>
+  <SqrtNumber number="0.0279936" N="7" eps="0.0001" expected="0.6"/>
+</SqrtNumberDetails>
+
