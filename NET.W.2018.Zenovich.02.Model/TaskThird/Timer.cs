@@ -8,6 +8,9 @@ using System.Diagnostics;
 
 namespace NET.W._2018.Zenovich._02.Model.TaskThird
 {
+    /// <summary>
+    /// calculate time of any operation
+    /// </summary>
     public class Timer : ITimer
     {
         private Stopwatch stopwatch;
@@ -17,17 +20,27 @@ namespace NET.W._2018.Zenovich._02.Model.TaskThird
             stopwatch = new Stopwatch();
         }
 
+        /// <summary>
+        /// get timespan from timer
+        /// </summary>
+        /// <returns></returns>
         public TimeSpan GetTime()
         {
             return stopwatch.Elapsed;
         }
 
+        /// <summary>
+        /// starts timer
+        /// </summary>
         public void Start()
         {
             stopwatch.Reset();
             stopwatch.Start();
         }
 
+        /// <summary>
+        /// stops timer
+        /// </summary>
         public void Stop()
         {
             stopwatch.Stop();

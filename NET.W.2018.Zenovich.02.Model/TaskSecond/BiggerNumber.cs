@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace NET.W._2018.Zenovich._02.Model.TaskSecond
 {
+    /// <summary>
+    /// allowas to seek for a next bigger number to specified value.
+    /// </summary>
     public class BiggerNumber : IBiggerNumber
     {
         private int _indexLeft;
@@ -43,6 +46,11 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
             _length = -1;
         }
 
+        /// <summary>
+        /// finds a next bigger number to the number.
+        /// </summary>
+        /// <param name="number">will be used in calculation.</param>
+        /// <returns>Either next bigger number or minus one.</returns>
         public int FindNextBiggerNumber(int number)
         {
             if (number < 0)

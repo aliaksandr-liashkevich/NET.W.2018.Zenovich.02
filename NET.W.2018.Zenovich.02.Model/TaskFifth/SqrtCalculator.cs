@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace NET.W._2018.Zenovich._02.Model.TaskFifth
 {
+    /// <summary>
+    /// allows to get sqrt of number
+    /// </summary>
     public class SqrtCalculator : ISqrt
     {
         private double Pow(double number, int n)
@@ -26,6 +29,13 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFifth
             return (1 / n) * ((n - 1) * x0 + number / Pow(x0, (int)n - 1));
         }
 
+        /// <summary>
+        /// implementations sqrt algorithm for number
+        /// </summary>
+        /// <param name="number">number will be used in sqrt calculation</param>
+        /// <param name="n">power in sqrt calculation</param>
+        /// <param name="eps">accuracy</param>
+        /// <returns>nth root of number</returns>
         public double SqrtN(double number, int n, double eps)
         {
             if (n < 0)

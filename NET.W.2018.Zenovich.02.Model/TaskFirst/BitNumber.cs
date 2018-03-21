@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace NET.W._2018.Zenovich._02.Model.TaskFirst
 {
+    /// <summary>
+    /// allows to get inserted number from j-th to i-th bits
+    /// </summary>
     public class BitNumber : IBitNumber
     {
         private int GetBitNumberOfUnits(int number)
@@ -24,6 +27,14 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFirst
             return jUnits & shift;
         }
 
+        /// <summary>
+        /// replace specific btis of a number from j-th to i-th bits
+        /// </summary>
+        /// <param name="leftValue">source number</param>
+        /// <param name="rightValue">inserted number</param>
+        /// <param name="i">from</param>
+        /// <param name="j">to</param>
+        /// <returns></returns>
         public int InsertNumber(int leftValue, int rightValue, int i, int j)
         {
             if (i < 0 || i > 31)
