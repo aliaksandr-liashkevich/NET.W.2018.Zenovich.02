@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace NET.W._2018.Zenovich._02.Model.TaskFifth
 {
     /// <summary>
-    /// allows to get sqrt of number
+    /// Allows to get sqrt of number.
     /// </summary>
     public class SqrtCalculator : ISqrt
     {
@@ -30,12 +30,17 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFifth
         }
 
         /// <summary>
-        /// implementations sqrt algorithm for number
+        /// Implementations sqrt algorithm for number.
         /// </summary>
-        /// <param name="number">number will be used in sqrt calculation</param>
-        /// <param name="n">power in sqrt calculation</param>
-        /// <param name="eps">accuracy</param>
-        /// <returns>nth root of number</returns>
+        /// <param name="number">The number.</param>
+        /// <param name="n">The n.</param>
+        /// <param name="eps">The eps.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// <paramref name="n"/> is less than 0
+        /// or
+        /// <paramref name="eps"/> is less than 0.
+        /// </exception>
         public double SqrtN(double number, int n, double eps)
         {
             if (n < 0)

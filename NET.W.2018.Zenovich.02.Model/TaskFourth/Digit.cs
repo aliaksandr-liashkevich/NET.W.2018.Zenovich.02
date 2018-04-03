@@ -9,19 +9,21 @@ using System.Threading.Tasks;
 namespace NET.W._2018.Zenovich._02.Model.TaskFourth
 {
     /// <summary>
-    /// filters integer number array.
+    /// Filters integer number array.
     /// </summary>
     public class Digit : IDigit
     {
         /// <summary>
-        /// allows to filter array numbers.
+        /// Filters the digit.
         /// </summary>
-        /// <param name="number">number that will be used to filter the array.</param>
-        /// <param name="arguments">Array of integer</param>
-        /// <returns>Filtered array</returns>
+        /// <param name="number">The number.</param>
+        /// <param name="arguments">The arguments.</param>
+        /// <returns>A Filtered array.</returns>
+        /// <exception cref="ArgumentNullException">
+        /// <paramref name="arguments"/> is equals null.
+        /// </exception>
         public int[] FilterDigit(int number, params int[] arguments)
         {
-            
             if (arguments == null)
             {
                 throw new ArgumentNullException(nameof(arguments));

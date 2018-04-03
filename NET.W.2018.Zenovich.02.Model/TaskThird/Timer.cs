@@ -9,7 +9,7 @@ using System.Diagnostics;
 namespace NET.W._2018.Zenovich._02.Model.TaskThird
 {
     /// <summary>
-    /// calculate time of any operation
+    /// Calculate time of any operation.
     /// </summary>
     public class Timer : ITimer
     {
@@ -21,7 +21,7 @@ namespace NET.W._2018.Zenovich._02.Model.TaskThird
         }
 
         /// <summary>
-        /// get timespan from timer
+        /// Get time span from timer.
         /// </summary>
         /// <returns></returns>
         public TimeSpan GetTime()
@@ -30,7 +30,7 @@ namespace NET.W._2018.Zenovich._02.Model.TaskThird
         }
 
         /// <summary>
-        /// starts timer
+        /// Starts timer.
         /// </summary>
         public void Start()
         {
@@ -39,7 +39,7 @@ namespace NET.W._2018.Zenovich._02.Model.TaskThird
         }
 
         /// <summary>
-        /// stops timer
+        /// Stops timer.
         /// </summary>
         public void Stop()
         {

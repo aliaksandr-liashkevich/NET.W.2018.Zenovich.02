@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace NET.W._2018.Zenovich._02.Model.TaskSecond
 {
     /// <summary>
-    /// allowas to seek for a next bigger number to specified value.
+    /// Allows to seek for a next bigger number to specified value.
     /// </summary>
     public class BiggerNumber : IBiggerNumber
     {
@@ -47,10 +47,16 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
         }
 
         /// <summary>
-        /// finds a next bigger number to the number.
+        /// Finds the next bigger number.
         /// </summary>
-        /// <param name="number">will be used in calculation.</param>
-        /// <returns>Either next bigger number or minus one.</returns>
+        /// <param name="number">The number.</param>
+        /// <returns>The next bigger number.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// <paramref name="number"/> is less than 0.
+        /// </exception>
+        /// <exception cref="OverflowException">
+        /// The result is bigger than <paramref cref="int.MaxValue"/>.
+        /// </exception>
         public int FindNextBiggerNumber(int number)
         {
             if (number < 0)
@@ -78,6 +84,12 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
             return -1;
         }
 
+        /// <summary>
+        /// Finds the next bigger number.
+        /// </summary>
+        /// <param name="number">The number.</param>
+        /// <param name="timeSpan">The time span.</param>
+        /// <returns>The next bigger number.</returns>
         public int FindNextBiggerNumber(int number, ref TimeSpan timeSpan)
         {
             int result;
@@ -123,7 +135,7 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
             _indexRight = -1;
         }
 
-        public String SwapAndSort()
+        private String SwapAndSort()
         {
             char[] array = _number.ToCharArray();
             Swap(array, _indexLeft, _indexRight);
@@ -133,7 +145,7 @@ namespace NET.W._2018.Zenovich._02.Model.TaskSecond
             return new string(array);
         }
 
-        public void Swap<T>(T[] array, int left, int right)
+        private void Swap<T>(T[] array, int left, int right)
         {
             T temp = array[left];
             array[left] = array[right];

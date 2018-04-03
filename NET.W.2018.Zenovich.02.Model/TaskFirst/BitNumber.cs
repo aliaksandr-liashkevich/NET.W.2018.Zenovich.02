@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace NET.W._2018.Zenovich._02.Model.TaskFirst
 {
     /// <summary>
-    /// allows to get inserted number from j-th to i-th bits
+    /// Allows to get inserted number from j-th to i-th bits
     /// </summary>
     public class BitNumber : IBitNumber
     {
@@ -28,13 +28,22 @@ namespace NET.W._2018.Zenovich._02.Model.TaskFirst
         }
 
         /// <summary>
-        /// replace specific btis of a number from j-th to i-th bits
+        /// Insert <paramref name="rightValue" /> into <paramref name="leftValue" /> from <paramref name="j" />-th to <paramref name="i" />-th bit.
         /// </summary>
-        /// <param name="leftValue">source number</param>
-        /// <param name="rightValue">inserted number</param>
-        /// <param name="i">from</param>
-        /// <param name="j">to</param>
-        /// <returns></returns>
+        /// <param name="leftValue">A int number source.</param>
+        /// <param name="rightValue">A int inserted number.</param>
+        /// <param name="i">Position to.</param>
+        /// <param name="j">Position from.</param>
+        /// <returns>
+        /// Result of inserting <paramref name="rightValue" /> into <paramref name="leftValue" />.
+        /// </returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// <paramref name="i"/> is less than 0 or great than 31
+        /// or
+        /// <paramref name="j"/> is less than 0 or great than 31
+        /// or
+        /// <paramref name="i"/> is great than <paramref name="j"/>.
+        /// </exception>
         public int InsertNumber(int leftValue, int rightValue, int i, int j)
         {
             if (i < 0 || i > 31)
